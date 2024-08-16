@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clickjacking Info</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="#" class="back-link">&lt; Back</a>
+            
+            <h1>What is a Clickjacking?</h1>
+            <p><strong>Clickjacking</strong> is an attack which tricks users into clicking a harmful link.</p>
+
+            <div class="content">
+                <div class="text">
+                    <h1>How do hackers do this?</h1>
+                    <p>For this example, I have created a website with a basic video that the user might want to click on to play.</p>
+    
+                    <p>However, what we are going to do is add a transparent div element that has a higher z-index then other elements. This means that when the user attempts to click on the video they will in reality be clicking on the div. The image on the right is an example of a website which could trick users into going to google.com.</p>
+                    <p>While you can't directly affect someone's site with this technique, it still can be used for malcious purposes and therefore depending on your intentions you could get in a lot of trouble. Remember, these lessons are for educational purposes only and do not endorse you to hack anyone.</p>
+                    <p>If you're interested, you can check out the site we coded here (<a href="https://ToastHackerAcademy.github.io/ExampleSite">https://ToastHackerAcademy.github.io/ExampleSite</a>). Beware, if you click on the screen it will redirect you to google.com.</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="Example.png" alt="Screenshot of code">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

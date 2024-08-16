@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DDoS Attack Info</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="#" class="back-link">&lt; Back</a>
+            
+            <h1>What is a DDoS Attack</h1>
+            <p><strong>A DDoS</strong> or <strong>Distributed Denial of Service Attack</strong> is an attack that involves flooding a server with so many requests that it becomes overwhelmed and its performance is ultimately slowed down.</p>
+            
+            <p>DDoS attacks are normally carried out with a network of computers. Usually, one machine doesn’t provide enough network traffic to impact a server’s efficiency, however hackers have found ways to get around this. A common tactic is to create something referred to as a <strong>botnet</strong>. A botnet consists of a group of bots, these bots are often individual devices which have been infected with malware.</p>
+
+            <h2>Why don’t DDoS attacks work?</h2>
+            <p>Even though DDoS attacks seem like they would be efficient there are several reasons why DDoS attacks aren’t always that effective. The biggest issue with this attack is that most servers will have a firewall. If a firewall detects a lot of traffic from the same devices it would simply be able to block requests from that IP Address. However, with hackers becoming more advanced, tools have been developed which tricks the firewall into thinking that each request is unique.</p>
+
+            <div class="content">
+                <div class="text">
+                    <h1>hping3</h1>
+                    <p>A common tool used for DDoS attacks is one called <strong>hping3</strong>. hping3 can be downloaded on most Linux distributions but in this example Kali Linux is being used so the tool comes pre-installed. hping3 is a versatile tool designed to send custom TCP/IP packets. With the command shown in the image, we can launch a DDoS attack. However, before we continue it is important to note that this is for <strong>EDUCATIONAL PURPOSES ONLY</strong>, attacking a server without permission can lead to serious consequences.</p>
+    
+                    <p>Now, let’s break down the command:</p>
+                    <ul>
+                        <li>‘sudo’ - This lets you run the command as root</li>
+                        <li>‘hping3’ - This just tells our computer we want to run the command hping3</li>
+                        <li>‘-1’ - We use the switch 1 which is for a ping</li>
+                        <li>‘--flood’ - Telling the tool to send as many requests or pings as possible.</li>
+                        <li>‘123.123.1.123’ - This is our target, this IP Address is obviously just a placeholder so that can be updated with your target.</li>
+                    </ul>
+                </div>
+    
+                <div class="image-container">
+                    <img src="screenshot.png" alt="Screenshot of hping3 command">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
